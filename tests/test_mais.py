@@ -1,17 +1,20 @@
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import main
 
-def test_sum_list():
-    assert main.sum_list([1, 2, 3]) == 6
-    assert main.sum_list([0, -1, 1]) == 0
+def test_soma():
+    assert main.soma(2, 3) == 5
+    assert main.soma(-1, 1) == 0
 
-def test_sort_list():
-    assert main.sort_list([3, 1, 2]) == [1, 2, 3]
+def test_subtrair():
+    assert main.subtrair(5, 2) == 3
+    assert main.subtrair(0, 3) == -3
 
-def test_apply_function():
-    result = main.apply_function(lambda x: x * 2, [1, 2, 3])
-    assert result == [2, 4, 6]
+def test_multiplicar():
+    assert main.multiplicar(3, 4) == 12
+    assert main.multiplicar(-2, 5) == -10
 
-def test_multiplier_closure():
-    times3 = main.multiplier(3)
-    assert times3(4) == 12
-    assert times3(0) == 0
+def test_dividir():
+    assert main.dividir(10, 2) == 5
+    assert main.dividir(9, 3) == 3
+    assert main.dividir(10, 0) == "Erro: divisão por zero"

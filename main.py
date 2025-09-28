@@ -1,37 +1,19 @@
+def soma(a, b):
+    return a + b
 
+def subtrair(a, b):
+    return a - b
 
-def sum_list(numbers):
-    return sum(numbers)
+def multiplicar(a, b):
+    return a * b
 
-
-def sort_list(numbers):
-    return sorted(numbers)
-
-
-def apply_function(func, numbers):
-    return [func(x) for x in numbers]  
-
-
-def multiplier(factor):
-    def multiply(x):
-        return x * factor
-    return multiply
-
+def dividir(a, b):
+    if b == 0:
+        return "Erro: divisão por zero"
+    return a / b
 if __name__ == "__main__":
-   
-    nums = [5, 2, 9, 1, 7]
-
-    print("Lista original:", nums)
-
-    
-    print("Soma:", sum_list(nums))
-
-   
-    print("Ordenada:", sort_list(nums))
-
-    
-    print("Quadrados:", apply_function(lambda x: x**2, nums))
-
-    
-    times3 = multiplier(3)
-    print("Multiplicados por 3:", apply_function(times3, nums))
+    # Exemplo de execução manual
+    print("Soma: ", soma(2, 3))
+    print("Subtração: ", subtrair(5, 2))
+    print("Multiplicação: ", multiplicar(3, 4))
+    print("Divisão: ", dividir(10, 2))
