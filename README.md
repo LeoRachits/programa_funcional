@@ -1,28 +1,42 @@
-\## Autores
+﻿# Projeto Programa Funcional
 
+## 📌 Objetivo do Projeto
+Este projeto foi desenvolvido como parte da disciplina **Programação Funcional**.  
+O objetivo é implementar operações matemáticas básicas em Python, aplicando testes unitários com **pytest** para garantir o funcionamento correto.
 
+---
 
-| Matrícula | Nome                         | Papel                                                         |
+## 📂 Estrutura do Projeto
+- **main.py** → contém as funções de soma, subtração, multiplicação e divisão.  
+- **tests/** → contém os testes unitários com pytest.  
+- **docs/** → contém documentação de apoio.  
+- **README.md** → documentação principal do projeto.  
 
-|-----------|------------------------------|---------------------------------------------------------------|
+---
 
-| 2326350   | Leandro Gonçalves Nascimento | Documentação do projeto e testes automatizados                |
+## ▶️ Como Executar o Projeto
 
-| 2326242   | Eric Vinicius Dias Aquino    | Desenvolvimento da API e integração com serviços externos     |
+1. Criar e ativar o ambiente virtual:
+`powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+Instalar as dependências:
 
-| 2213897   | Eleejohn Lima                | Modelagem de requisitos e suporte ao banco de dados           |
+pip install -r requirements.txt
+Executar os testes:
 
-| 232783    | Sidney Jesus Felix de Freitas| Arquitetura do sistema e suporte técnico                      |
+pytest -q
+Autores
 
-| 2315831   | Matheus França Silva         | Frontend e relatórios de resultados                           |
+2326350 - Leandro Gonçalves Nascimento
 
-| 2326252   | Alexya Cavalcante Pereira    | Validação, revisão final e apresentação do projeto            |
+2326242 - Eric Vinicius Dias Aquino
 
+2213897 - Eleejohn Lima
 
+232783 - Sidney Jesus Felix de Freitas
 
-Disciplina N703 - Integração de Sistemas  
+2315831 - Matheus França Silva
 
-Universidade de Fortaleza - Unifor
-
-
+2326252 - Alexya Cavalcante Pereira
 
